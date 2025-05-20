@@ -1,0 +1,57 @@
+{
+  "name": "git-commit-generator",
+  "displayName": "Git Commit Message Generator",
+  "description": "Generate commit messages based on file changes",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "SCM Providers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:git-commit-generator.generateCommitMessage"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "git-commit-generator.generateCommitMessage",
+        "title": "Generate Commit Message",
+        "icon": {
+          "light": "resources/light/message.svg",
+          "dark": "resources/dark/message.svg"
+        }
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "when": "scmProvider == git",
+          "command": "git-commit-generator.generateCommitMessage",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.100.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.17.48",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.27.0",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
