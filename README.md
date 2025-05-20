@@ -1,3 +1,11 @@
+---
+title: "Git Commit Message Generator"
+description: "VS Code extension ที่ช่วยสร้าง commit message อัตโนมัติจากการเปลี่ยนแปลงของไฟล์ในโปรเจค Git ของคุณ"
+pubDate: "May 20 2025"
+heroImage: "/projects/gcmg.png"
+language: "Nodejs,Typescript"
+---
+
 # Git Commit Message Generator
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=your-publisher.git-commit-generator)
@@ -5,8 +13,6 @@
 [![Downloads](https://img.shields.io/badge/downloads-1K-brightgreen.svg)](https://marketplace.visualstudio.com/items?itemName=your-publisher.git-commit-generator)
 
 VS Code extension ที่ช่วยสร้าง commit message อัตโนมัติจากการเปลี่ยนแปลงของไฟล์ในโปรเจค Git ของคุณ
-
-![Screenshot](images/screenshot.png)
 
 ## ✨ คุณสมบัติ
 
@@ -43,8 +49,6 @@ VS Code extension ที่ช่วยสร้าง commit message อัต�
 4. คลิกที่ไอคอน "Generate Commit Message" ที่อยู่ในส่วนบนของ Source Control view (ดูรูปด้านล่าง)
 5. commit message จะถูกสร้างและใส่ลงในช่อง commit message โดยอัตโนมัติ
 6. ตรวจสอบและแก้ไข message ตามต้องการ แล้วกด commit
-
-![วิธีใช้งาน](images/how-to-use.gif)
 
 ## 📝 ตัวอย่าง Commit Messages
 

@@ -4,7 +4,7 @@
   "description": "Generate commit messages based on file changes",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "SCM Providers",
