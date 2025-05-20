@@ -2,6 +2,10 @@
   "name": "git-commit-generator",
   "displayName": "Git Commit Message Generator",
   "description": "Generate commit messages based on file changes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abe27/git-commit-message.git"
+  },
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.100.0"
